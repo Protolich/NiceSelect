@@ -15,6 +15,10 @@ body{
 	color: #888;
 }
 
+.niceSelect.focus, .niceSelect:hover{
+	border: 1px solid #999;
+}
+
 
 .niceSelect:after{ /* Creates the arrow and positions it to the right */
 	border-top: 5px solid black;

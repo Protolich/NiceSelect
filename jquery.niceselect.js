@@ -4,4 +4,10 @@ jQuery(document).ready(function($) {
 	$('select.nice').change(function (event) {
 	    $(this).parent('.niceSelect').children('span.niceText').text($(this).children('option:selected').text());
 	}).change();
+	
+	$('select.nice').focus(function(event) {
+		$(this).parent('.niceSelect').addClass('focus');
+	}).blur(function(event) {
+		$(this).parent('.niceSelect').removeClass('focus');
+	});;
 });
