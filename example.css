@@ -2,7 +2,7 @@ body{
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-.niceSelect{
+.niceselect-wrapper {
 	position: relative; /* This must either be positioned relative or absolutely */
 	width: 215px;
 	height: 40px;
@@ -22,12 +22,13 @@ body{
 
 
 /* This is applied when the user tabs to focus or hovers on a nice select element */
-.niceSelect.focus, .niceSelect:hover{
+.niceselect-wrapper.focus,
+.niceselect-wrapper:hover {
 	border: 1px solid #999;
 }
 
 
-.niceSelect:after{ /* Creates the arrow and positions it to the right */
+.niceselect-wrapper:after { /* Creates the arrow and positions it to the right */
 	border-top: 5px solid black;
 	border-right: 5px solid transparent;
 	border-left: 5px solid transparent;
@@ -43,13 +44,15 @@ body{
 	position: absolute;
 }
 
-.niceSelect span.niceText{
+.niceselect-wrapper .niceselect-text {
 	padding: 0 10px;
 	line-height: 40px; /* Make sure this matches the height of .niceSelect including padding */
 }
 
-.niceSelect select{
+.niceselect-wrapper select {
 	display: block;
+	opacity: 0;
+	filter: alpha(opacity=0);
 	position: absolute;
 	top: 0;
 	left: 0;

@@ -1,0 +1,32 @@
+{
+  "name": "NiceSelect",
+  "version": "0.0.1",
+  "description": "Graceful styled select box jQuery plugin.",
+  "main": "jquery-1.7.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Protolich/NiceSelect.git"
+  },
+  "keywords": [
+    "javascript",
+    "jquery",
+    "html",
+    "form",
+    "select"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Protolich/NiceSelect/issues"
+  },
+  "homepage": "https://github.com/Protolich/NiceSelect",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-jshint": "~0.9.2",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}
