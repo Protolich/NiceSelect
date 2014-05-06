@@ -46,6 +46,7 @@
 
 			// Changes the text in the fake select element to reflect the changes to the real select element
 			_this.on('change', niceselectUpdate);
+			_this.on('nschange', niceselectUpdate); // Allow triggering via a non-standard event name to escape recursion hell
 
 			// Set the initial text instead of triggering the change event
 			niceselectUpdate();
