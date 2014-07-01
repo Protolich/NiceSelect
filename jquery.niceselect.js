@@ -5,7 +5,7 @@
 
 		// plugin default options
 		var defaults = {
-			default: ''
+			defaultValue: ''
 		};
 
 		// extends defaults with options provided
@@ -35,7 +35,7 @@
 
 			// Set the label and any classes
 			var niceselectUpdate = function () {
-				if (select.value === defaults.default) {
+				if (select.value === defaults.defaultValue) {
 					_wrapper.addClass('niceselect-default');
 				} else {
 					_wrapper.removeClass('niceselect-default');
